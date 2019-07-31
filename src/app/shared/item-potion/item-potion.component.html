@@ -1,0 +1,37 @@
+<div class="col-6 col-md-4" *ngFor="let potion of potions"  style="display: inline-flex !important">
+  <a href="#modal" (click)="selectPotion(potion)">
+    <div class="produto">
+      <img class="img-produto" [src]="img_path + potion.image" />
+      <div class="text-produto">
+        <h5 class="nome-produto">{{potion.name}} -</h5>
+        <span class="valor-produto"> {{potion.price}}</span>
+      </div>
+    </div>
+  </a>
+</div>
+<div class="remodal" data-remodal-id="modal">
+  <button data-remodal-action="close" class="remodal-close"></button>
+  <div class="row">
+    <div class="col-md-7">
+      <div class="img-lightbox">
+        <img class="img" [src]="img_path + potion.image" />
+      </div>
+    </div>
+    <div class="col-md-5">
+      <div class="text-product">
+        <ul>
+          <li class="text-bold">{{potion.name}}</li>
+          <li class="text-bold">Use/Effect:</li>
+          <li class="text-regular">{{potion.effect}}</li>
+          <li class="text-bold">Ingredients:</li>
+          <li class="text-regular" *ngFor="let ingredient of potion?.ingredients">{{ingredient}}</li>
+          <li class="text-price">Price:</li>
+          <li class="text-value">{{potion.price}}</li>
+          <li class="btn-add-car">
+            <button>add to cart</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,175 @@
+a {
+    width          : 100%;
+    text-decoration: none;
+
+    .produto {
+        margin: 20px 0px;
+
+        .img-produto {
+            width  : 100%;
+            height : 150px;
+            margin : 0 auto;
+            display: flex;
+        }
+
+        .text-produto {
+            text-align: center;
+
+            .nome-produto {
+                margin         : 0px;
+                padding        : 0px;
+                display        : inline-flex;
+                font-size      : 12px;
+                font-weight    : bold;
+                text-decoration: none;
+                color          : #000;
+            }
+
+            .valor-produto {
+                margin     : 0px;
+                padding    : 0px;
+                display    : inline-flex;
+                font-size  : 12px;
+                font-weight: bold;
+                color      : #f93715;
+            }
+        }
+    }
+}
+
+
+.remodal {
+    position: relative;
+    padding : 60px;
+
+    .remodal-close {
+        left : auto;
+        right: 0;
+    }
+
+    .remodal-close:before {
+        font-size  : 40px;
+        font-weight: 100;
+    }
+
+    .img-lightbox {
+        .img {
+            width: 100%;
+        }
+    }
+
+    .text-product {
+        ul {
+            padding   : 0px;
+            margin    : 0px;
+            list-style: none;
+
+            .text-bold {
+                text-align : center;
+                font-size  : 18px;
+                font-weight: bold;
+                margin     : 15px 0px;
+            }
+
+            .text-regular {
+                text-align : center;
+                font-size  : 14px;
+                font-weight: normal;
+                margin     : 0px;
+            }
+
+            .text-price {
+                text-align : center;
+                font-size  : 18px;
+                font-weight: bold;
+                margin     : 20px 0px 0px;
+                display    : inline-flex;
+            }
+
+            .text-value {
+                display    : inline-flex;
+                text-align : center;
+                font-size  : 18px;
+                font-weight: 600;
+                margin     : 0px 5px;
+                color      : #D73A1E;
+            }
+
+            .btn-add-car {
+                text-align: center;
+                margin-top: 25px;
+
+                button {
+                    background-color: #D73A1E;
+                    border          : 1px solid #D73A1E;
+                    border-radius   : 5px;
+                    color           : #fff;
+                    height          : 40px;
+                    padding         : 10px;
+                    text-transform  : uppercase;
+                    font-family     : sans-serif;
+                    font-size       : 16px;
+                    font-weight     : 100;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    a {
+        .produto {
+            margin: 50px 0px;
+
+            .img-produto {
+                width : 250px;
+                height: 250px;
+            }
+
+            .text-produto {
+                .nome-produto {
+                    font-size: 18px;
+                }
+
+                .valor-produto {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .remodal {
+        .text-product {
+            ul {
+                .text-bold {
+                    text-align: left;
+                    font-size : 20px;
+                    margin    : 20px 0px;
+                }
+
+                .text-regular {
+                    text-align: left;
+                    font-size : 16px;
+                }
+
+                .text-price {
+                    display   : block;
+                    text-align: left;
+                    font-size : 20px;
+                    margin    : 25px 0px 0px;
+                }
+
+                .text-value {
+                    display   : block;
+                    text-align: left;
+                    font-size : 20px;
+                }
+
+                .btn-add-car {
+                    text-align: left;
+                    margin-top: 25px;
+                }
+            }
+        }
+    }
+}

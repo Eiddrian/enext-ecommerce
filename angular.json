@@ -23,9 +23,15 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/Remodal-master/src/css/remodal-default-theme.css",
+              "src/assets/Remodal-master/src/css/remodal.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "src/assets/Remodal-master/src/js/remodal.js",
+              "src/js/core.js"
+            ],
             "es5BrowserSupport": true
           },
           "configurations": {
